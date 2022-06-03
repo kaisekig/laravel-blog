@@ -1,0 +1,429 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+
+}
+
+nav {
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+    width: 100vw;
+    overflow: hidden;
+    position: fixed; 
+    top: 0; 
+    background-color: #fff;
+}
+
+nav > .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    align-self: center;
+    width: 80vw;
+    border-bottom: 1px solid #dbd9ce;
+}
+
+.nav {
+    font-size: 1.2em;
+}
+
+.main-heading {
+   
+}
+
+.nav-link {
+    margin-top: 20px;
+}
+
+.nav {
+    align-self: flex-end;
+}
+
+a {
+    font-size: 1.09em;
+    color: inherit;
+    margin-left: 0.1in;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+}
+
+main > h1 {
+    font-size: 4.8em;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    width: 60vw;
+    border: 1px solid #dbd9ce;
+    margin: 0.5in auto;
+
+
+}
+
+.form {
+    display: flex;
+    width: inherit;
+}
+
+form {
+    display: flex;
+    width: inherit;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form > .flex-pair {
+    width: 100%;
+}
+
+.flex-pair {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+label, input {
+    font-size: 1.4em;
+    margin: 0.4em 1em;
+}
+
+label {
+    width: 20%;
+    text-align: left;
+}
+
+input {
+    width: 40%;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    margin-top: 2em;
+}
+
+.btn-hover {
+    font-size: inherit;
+}
+
+
+
+button {
+    margin-top: 0.1in;
+    align-self: center;
+    padding: 6px;
+    width: 80%;
+    font-size: 1.0em;
+    
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.category {
+    font-size: 1.6em;
+    width: 20%;
+    margin: 0.5in;
+    width: auto;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 1.5in 0 0 0;
+}
+
+.s-section {
+    min-height: 30vh;
+    max-width: 40%;
+    background-color: inherit;
+    border: none;
+}
+
+.art {
+    margin: 1in 0;
+}
+
+.category:hover {
+    background-color: none;
+    
+}
+
+.content-wrapp {
+    width: 80%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    
+}
+
+.grid-item {
+    padding: 40px;
+    text-align: left;
+    word-wrap: break-word;
+}
+
+.nm {
+    margin: 0;
+}
+
+.styled-link {
+    color: red;
+}
+
+.styled-link:hover {
+    color: red transparent(4,1,8,2);
+}
+
+.cmnts {
+    font-size: 2rem;
+    color: red;
+}
+
+.add-post, .edit-post, .add-category {
+    display: block;
+    width: 50%;
+    margin: 20px auto;
+    padding: 100px 0 50px 0;
+}
+
+.content-wrapp > article > form > label {
+    width: 50%;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+.content-wrapp > article > form > input, select, textarea, button {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.content-wrapp > article > form > input {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+.normal {
+    display: block;
+    width: 100%;
+    
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2in;
+    
+}
+
+.post-content {
+    width: 50%;
+    word-wrap: break-word;
+    margin: 0 auto;
+    padding-bottom: 0.5in;
+    border-bottom: 1px solid #ccc;
+}
+
+.post-comments {
+    word-wrap: break-word;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 2px 8px;
+}
+
+.post-comments::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.user {
+    margin-top: 1rem;
+}
+
+.fa-user {
+    padding-left: 16px;
+}
+
+.cmnt {
+    padding: 16px;
+    max-width: 100%;
+}
+
+.add-comment {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0.3in;
+    padding: 24px 8px;
+}
+
+.post > :nth-child(2) {
+    margin-top: 1in;
+}
+
+section {
+    margin: 1.5in 0 0 0;
+}
+
+.content-wrapp > .add-category > form > input {
+    width: 100%;
+    margin: 0.2in 0 0 0;
+}
+
+.content-wrapp > .add-category > form > button {
+    margin: 0.2in 0 0 0;
+}
+
+.content-wrapp > .add-category > form > label {
+    margin: 0;
+    
+}
+
+.m {
+    width: 50%;
+    margin: 1.5in auto;
+    text-align: center;
+}
+
+.sm-m {
+    margin-top: 0.5in !important;
+}
+
+.com-sec > a > .fa-comments{
+    margin-top: 0.5in;
+}
+
+#search {
+    margin: 0 10px;
+    border-radius: 10px;
+    padding: 2px 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 90%;
+    height: 20px;
+    
+}
+
+#search::placeholder {
+    font-size: 12px;
+}
+
+input[type=submit] {
+    width: 20px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.search-results {
+
+}
+
+.lg {
+    font-size: 2rem;
+    margin: 26px 0 !important;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5in auto;
+    width: 60%;
+    text-align: center;
+}
+
+.container > section {
+    border-radius: 10px;
+}
+
+.container > section > form > .flex-pair > input{
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.category {
+    border-radius: 8px;
+}
+
+input {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.btn-hover {
+    text-align: center;
+    margin: 0;
+}
